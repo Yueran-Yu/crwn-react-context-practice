@@ -1,15 +1,15 @@
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+import 'firebase/compat/auth';
 
 const config = {
-  apiKey: 'AIzaSyCdHT-AYHXjF7wOrfAchX4PIm3cSj5tn14',
-  authDomain: 'crwn-db.firebaseapp.com',
-  databaseURL: 'https://crwn-db.firebaseio.com',
-  projectId: 'crwn-db',
-  storageBucket: 'crwn-db.appspot.com',
-  messagingSenderId: '850995411664',
-  appId: '1:850995411664:web:7ddc01d597846f65'
+  apiKey: "AIzaSyBbgMgTEQk4BLL034q5fPvThZtyW6R6jB8",
+  authDomain: "crwn-db2-f72b6.firebaseapp.com",
+  projectId: "crwn-db2-f72b6",
+  storageBucket: "crwn-db2-f72b6.appspot.com",
+  messagingSenderId: "306143668371",
+  appId: "1:306143668371:web:c342279e8771d190b80566",
+  measurementId: "G-VT84EGRRYF"
 };
 
 firebase.initializeApp(config);
@@ -35,7 +35,6 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
       console.log('error creating user', error.message);
     }
   }
-
   return userRef;
 };
 
